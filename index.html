@@ -1,0 +1,398 @@
+
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Andrew Carnegie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans : wight@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Open Sans"}
+body {font-family: "Lato"}
+</style>
+
+</head>
+
+<body class="w3-light-grey">
+
+  <body background= "rgba(0, 255, 255, 0.5)">
+
+<!-- Navigation bar with social media icons --> 
+
+<div class="w3-bar w3-black w3-hide-small">
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-telegram"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-youtube-square"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="img/Andrew_Carnegie_2.jpg" alt="Fashion Blog" width="1600" height="1060"> 
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">Y</h1>
+      <br> </br>
+      <br> </br>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>¿Quien es el hombre detrás del acero?</b></h1>
+      <h6><button class="w3-button w3-lime w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Historia de su juventud</h3>
+          <h5>El nacimiento de un 
+              <span class="w3-opacity">Visionario</span>
+          </h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/Andrew_and_Thomas_Carnegie.jpg" alt="Daguerrotipo de Andrew Carnegie de 16 años junto a su pequeño hermano Thomas Carnegie." style="width:100%" class="w3-padding-16">
+          <p><strong> No todos nacen en una cuna de oro: </strong>En su nacimiento en 1835 en Dunfermline, Escocia, Andrew Carnegie estaba destinado a enfrentar desafíos que moldearían su futuro. A los 13 años, emigró junto a su familia a Estados Unidos, estableciéndose en Pittsburgh. 
+            El viaje fue difícil, pero en medio de las dificultades, Carnegie demostró una voluntad inquebrantable de aprender y prosperar. Trabajó arduamente en diversos empleos, mientras aprovechaba cada oportunidad para educarse en la biblioteca pública. 
+            La escasez de recursos no fue un obstáculo para su deseo de conocimiento. La pasión, la determinación y el apoyo de mentores clave lo llevaron a ascender rápidamente en el mundo empresarial. Su infancia y juventud enriquecieron su visión empresarial y alimentaron su compromiso con el bienestar social. 
+            Desde sus modestos inicios hasta su posición como uno de los empresarios más exitosos de su tiempo, el camino de Andrew Carnegie refleja una historia de superación y perseverancia.</p>
+          <p class="w3-left"><button class="w3-button w3-pale-red w3-border" onclick="likeFunction(this)"><b><i class="fa fa-trophy"></i> Me gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-green" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/Andrew_Carnegie.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Frase que ilustra el texto <span class="w3-opacity w3-medium">May 12, 2023, 7:04 PM</span></h4>
+                <p>El hombre que adquiere la habilidad de tomar total posesión de su mente, puede tomar posesión de cualquier cosa</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large" style="opacity: 1;">
+        <div class="w3-center">
+          <h3>Obsesión por un cambio </h3>
+          <h5>Acenso a la riqueza<span class="w3-opacity">siendo operario de algodón</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/Andrew_C_Joven.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>Una juventud anciosa: </strong>  anhelos de cambios!</p>
+          <p>Adéntrate en el fascinante viaje de un joven visionario que transformó la industria del acero y dejó un legado imborrable. Con determinación y genialidad, Andrew Carnegie 
+          pasó de trabajar en una fábrica de algodón a convertirse en un titán del acero. Su enfoque audaz e innovador revolucionó el mundo empresarial, desafiando los límites convencionales y estableciendo nuevas formas de producir. 
+          Pero su historia no se trata solo de negocios, sino de perseguir sueños y superar obstáculos. Carnegie nos enseña que con pasión, determinación y un poco de audacia, podemos alcanzar alturas inimaginables. 
+          Prepárate para sumergirte en la inspiradora historia de un hombre que hizo temblar los cimientos de la industria y descubre cómo sus logros trascienden el tiempo.</p>
+          <p class="w3-left"><button class="w3-button w3-pale-red w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-green" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Thos_Scott_Mentor.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Cosmo0710<span class="w3-opacity w3-medium">April 10, 2023, 7:22 PM</span></h4>
+                <p>Una historia de gran inspiración.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Jpmorgan.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John Pierpont Morgan <span class="w3-opacity w3-medium">April 8, 2023, 10:32 PM</span></h4>
+                <p>Te compre tu empresa cuando no pudiste jajajaj</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Pittsburgh-1890.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Pittsburghmania <span class="w3-opacity w3-medium">April 7, 2023, 9:12 PM</span></h4>
+                <p>tuvo una vida dura pero siempre supo sobresalir</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Compromiso con la humanidad</h3>
+          <h5>Legado<span class="w3-opacity">en la humanidad</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/Andrew_Carnegie.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>Bibliotecas para todos: </strong>  El legado filantrópico de Andrew Carnegie!</p>
+          <p>Descubre cómo un hombre visionario cambió vidas a través de su compromiso con la educación y la creación de bibliotecas públicas. Andrew Carnegie, después de su éxito en los negocios, se dedicó a devolver a la sociedad de una manera grandiosa. 
+          Prepárate para sumergirte en la historia inspiradora de un hombre que creía en el poder transformador de la información y el aprendizaje. 
+          Las bibliotecas de Carnegie son un testimonio vivo de su filantropía y continúan beneficiando a generaciones enteras hasta el día de hoy.</p>
+          <p class="w3-left"><button class="w3-button w3-pale-red w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-green" onclick="myFunction('demo4')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo4" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/daleCarnegie.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Dale Carnegie<span class="w3-opacity w3-medium">April 20, 2023, 7:22 PM</span></h4>
+                <p>Aquí yace un hombre que supo cómo rodiarse de hombres más hábiles que él.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Carnegie_institution_administration_buiding_in_washington.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Instituto Carnegie <span class="w3-opacity w3-medium">April 8, 2023, 10:32 PM</span></h4>
+                <p>Creia en que los que tienen grandes riquezas deben ser socialmente responsables.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Andrew_and_Thomas_Carnegie.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Thomas Carnegie <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                <p>Gran hermano, gran hijo y espectacular persona</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/Thos_Scott_Mentor.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>Thomas Scott</h4>
+          <p>Soy el mentor de Andrew Carnegie</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Personas Relacionadas -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Personas Relacionadas</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="img/Jpmorgan.jpg" alt="Image" class="w3-left w3-margin-right" style="width:20%">
+            <span class="w3-large">J P morgan</span>
+            <br>
+            <span>Un poderoso financiero e industrial con una influencia significativa en los mercados financieros y la economía de su tiempo.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/Margaret_Carnegie_Miller_and_Andrew_Carnegie.jpg" alt="Image" class="w3-left w3-margin-right" style="width:20%">
+            <span class="w3-large">Margaret Carnegie Miller</span>
+            <br>
+            <span>Una destacada filántropa y defensora de la educación que llevó adelante el legado de su padre, Andrew Carnegie. Su dedicación a la promoción de bibliotecas y programas 
+            educativos dejó una huella duradera en la sociedad, mejorando el acceso a la educación para muchas personas.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/J D Rockefeler.jpg" alt="Image" class="w3-left w3-margin-right" style="width:20%">
+            <span class="w3-large">Jhon D Rockefeller</span>
+            <br>
+            <span>Un magnate del petróleo y filántropo que revolucionó la industria y dejó un legado duradero.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/Cornelius Vanderbilt.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:20%">
+            <span class="w3-large">Cornelius Vanderbilt</span>
+            <br>
+            <span>Un astuto empresario y magnate del transporte que desempeñó un papel fundamental en el desarrollo de la industria ferroviaria y la navegación a vapor en Estados Unidos.</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+     
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Historia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ascenso meteórico</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">E.E.U.U siglo XIX</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Industria del acero</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Visionario</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Obsesión de Riqueza</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Responsabilidad social</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">De Pobre a Rico</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Éxito empresarial</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Prosperidad</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Bibliotecas públicas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">El Evangelio de la Riqueza</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Empresario</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Filántropo</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Inspiration</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="img/Derecha_1.jpg" alt="Retrato de Andrew Carnegie delante de rio mississippi en Pittsburgh" style="width:100%"></p>
+            <p><img src="img/Derecha_2.jpg" alt="Retrato de Andrew Carnegie" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="img/Derecha_4.jpg" alt="Retrato Andrew Carnegie de 40 años" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="img/Derecha_5.jpg" alt="Retrato de Andrew Carnegie adolecente trabajador de algodón" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-telegram w3-hover-opacity"></i>
+          <i class="fa fa-flickr w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-youtube-square w3-hover-opacity"></i>
+          <i class="fa fa-github"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-lime">Subscribe</button></p>
+        </div>
+      </div>
+
+      <!-- Libros -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Libros relacionados</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="img/Autobiography of Andrew Carnegie.webp" alt="Autobiografia de Andrew Carnegie" class="w3-left w3-margin-right" style="width: 45%;">
+            <span class="w3-large">Autobiography of Andrew Carnegie</span>
+            <br>
+            <span>Es un relato inspirador sobre la vida del magnate del acero. Desde sus modestos inicios hasta su ascenso como uno de los hombres más ricos de Estados Unidos, 
+            Carnegie comparte su visión empresarial y su dedicación a la filantropía. Esta obra es una lectura enriquecedora que destaca la importancia del trabajo duro y la generosidad en la búsqueda del éxito.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/The Gospel of Wealth.jpg" alt="libro The Gospel of Wealth de 1889" class="w3-left w3-margin-right" style="width:45%">
+            <span class="w3-large">The Gospel of Wealth (1889)</span>
+            <br>
+            <span>Es un ensayo que expone la visión y filosofía de Andrew Carnegie sobre la riqueza y la responsabilidad social. En este libro, Carnegie defiende que los ricos tienen la obligación de utilizar 
+            su fortuna para el beneficio de la sociedad. Sus ideas sobre la filantropía y la distribución equitativa de la riqueza siguen siendo relevantes hasta el día de hoy.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/Triumphant Democracy (1886).jpg" alt="Image" class="w3-left w3-margin-right" style="width:45%">
+            <span class="w3-large">Triumphant Democracy (1886)</span>
+            <br>
+            <span>Carnegie examina el sistema democrático estadounidense y argumenta a favor de la igualdad de oportunidades y la prosperidad para todos los ciudadanos. El libro aborda temas como la educación,
+            el trabajo y la economía, ofreciendo una visión optimista y pragmática sobre la democracia y su capacidad para promover el progreso social.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/Round the World.jpg " alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:45%">
+            <span class="w3-large"> Round the World (1884)</span>
+            <br>
+            <span>Relata los viajes de Andrew Carnegie alrededor del mundo, ofreciendo una perspectiva fascinante de los lugares que visitó y las culturas que experimentó. El libro es una mezcla de observaciones 
+            personales, anécdotas interesantes y reflexiones sobre la diversidad del mundo. Es una obra que permite al lector embarcarse en un viaje a través de los ojos de Carnegie.</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-lime w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container " style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
